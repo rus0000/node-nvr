@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video host</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#cam1" aria-controls="cam1" role="tab" data-toggle="tab">
+                        <span class="fa fa-film fa-lg" aria-hidden="true"></span>
+                        CAM1</a>
+                </li>
+                <li role="presentation">
+                    <a href="#cam2" aria-controls="cam2" role="tab" data-toggle="tab">
+                        <span class="fa fa-film fa-lg" aria-hidden="true"></span>
+                        CAM2</a>
+                </li>
+                <li role="presentation">
+                    <a href="#live" aria-controls="live" role="tab" data-toggle="tab">
+                        <span class="fa fa-video-camera fa-lg" aria-hidden="true"></span>
+                        Live</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="cam1">
+                    <div class="player pull-left">
+                        <video controls height="480" width="640">
+                            <source src="" type="video/mp4"/>
+                        </video>
+                        <div class="speed-buttons">
+                            <div class="btn-group btn-group-horizontal btn-toggle">
+                                <button class="btn btn-lg btn-default" data-speed="1x">1x</button>
+                                <button class="btn btn-lg btn-default" data-speed="5x">5x</button>
+                                <button class="btn btn-lg btn-default" data-speed="10x">10x</button>
+                                <button class="btn btn-lg btn-default" data-speed="20x">20x</button>
+                                <button class="btn btn-lg btn-default" data-speed="50x">50x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m1x">1x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m5x">5x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m10x">10x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m20x">20x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m50x">50x</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group date" id="datetimepicker-cam1">
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cam2">
+                    <div class="player pull-left">
+                        <video controls height="480" width="640">
+                            <source src="" type="video/mp4"/>
+                        </video>
+                        <div class="speed-buttons">
+                            <div class="btn-group btn-group-horizontal btn-toggle">
+                                <button class="btn btn-lg btn-default" data-speed="1x">1x</button>
+                                <button class="btn btn-lg btn-default" data-speed="5x">5x</button>
+                                <button class="btn btn-lg btn-default" data-speed="10x">10x</button>
+                                <button class="btn btn-lg btn-default" data-speed="20x">20x</button>
+                                <button class="btn btn-lg btn-default" data-speed="50x">50x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m1x">1x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m5x">5x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m10x">10x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m20x">20x</button>
+                                <button class="btn btn-lg btn-success" data-speed="m50x">50x</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group date" id="datetimepicker-cam2">
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="live">
+                    <img class="live" src="/live/cam1/" alt="cam1" height="480" width="640">
+                    <img class="live" src="/live/cam2/" alt="cam2" height="480" width="640">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/lodash.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

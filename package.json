@@ -1,0 +1,35 @@
+{
+  "name": "node-nvr",
+  "version": "0.1.0",
+  "description": " A simple Network Video Recorder",
+  "repository": "https://github.com/rus0000/node-nvr",
+  "scripts": {
+    "start": "node ./server/app.js",
+    "test": "node ./test/unit.js"
+  },
+  "author": "Ruslan Yusupov",
+  "license": "MIT",
+  "dependencies": {
+    "CBuffer": "^1.1.0",
+    "bluebird": "^2.9.12",
+    "fs-extra": "^0.16.3",
+    "js-yaml": "^3.2.7",
+    "lodash": "^3.3.1",
+    "moment": "^2.9.0",
+    "split": "^0.3.3",
+    "winston": "^0.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-node-inspector": "^0.1.6",
+    "grunt-nodemon": "^0.4.0",
+    "istanbul": "^0.3.18",
+    "mocha": "^2.2.5",
+    "opener": "^1.4.0",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0"
+  }
+}

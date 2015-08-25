@@ -1,0 +1,57 @@
+body {
+    padding: 5px;
+}
+
+.tab-pane {
+    padding-top: 10px;
+}
+
+.date {
+    font-size: 18px;
+    width: 350px;
+    padding-left: 15px;
+}
+
+.day {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
+
+.day.disabled {
+    font-size: 14px;
+    font-weight: 100;
+    color: green;
+}
+
+.player {
+    display: block;
+    /*float: left;*/
+    width: 641px;
+    height: 570px;
+}
+
+.speed-buttons {
+    margin-top: 15px;
+    display: block;
+    float: left;
+}
+
+.speed-buttons button {
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    width: 65px;
+    height: 50px;
+}
+
+video {
+    border: 1px solid #ccc;
+}
+
+.live {
+    /*display: block;*/
+    border: 1px solid #ccc;
+    width: 640px;
+    height: 480px;
+}

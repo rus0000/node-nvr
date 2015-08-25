@@ -1,0 +1,39 @@
+recorder:
+  cameras:
+    - - "cam1" # will be used as folder name
+      - "admin:passwd@XX.XX.XX.XX:8080" # camera url avilable over Internet
+      - "feed1.ffm" # ffserver feedName
+      - ["1x", "5x", "10x", "20x", "50x"] #out - to watch an event details
+      - ["1x", "5x", "10x", "20x", "50x"] #motion - to quick find an event
+    - - "cam2"
+      - "admin:passwd@XX.XX.XX.XX:8080"
+      - "feed2.ffm"
+      - ["1x", "5x", "10x", "20x", "50x"]
+      - ["1x", "5x", "10x", "20x", "50x"]
+  startTime: "10:00:00"
+  stopTime: "21:30:00"
+  workDir: "/usr/node/video"
+  ffprobeLog: false
+  ffmpegLog: false
+  ffmpegMessageLog: false
+  monitorLog: true
+  recorderConsoleLog: false
+  monitorConsoleLog: false
+  catalogName: "catalog.json"
+  noRecording: false #true = do not start monitors, see rec.js
+  cleaner: #files to keep, all other clean
+    "7": # older than 7 days
+      - ["10x", "20x", "50x"] #out
+      - ["1x", "5x", "10x", "20x", "50x"] #motion
+    "14":
+      - ["20x", "50x"]
+      - ["5x", "10x", "20x", "50x"]
+    "30":
+      - ["50x"]
+      - ["10x", "20x", "50x"]
+    "90":
+      - []
+      - ["50x"] # to store as an archive
+    "180":
+      - []
+      - []
