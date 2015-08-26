@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rus0000/node-nvr.svg?branch=master)](http://travis-ci.org/rus0000/node-nvr)
+
 # Node Network Video Recorder (node-nvr)
 Node.js app for continuous video recording from remote IP web cams over Internet to the local hard drive.
 
